@@ -25,7 +25,7 @@ with st.sidebar.header('1. Upload your CSV data'):
 
 # Pandas Profiling Report
 if uploaded_file is not None:
-    @st.cache
+    @st.cache_data
     def load_csv():
         csv = pd.read_csv(uploaded_file)
         return csv
@@ -40,7 +40,7 @@ else:
     st.info('Awaiting for CSV file to be uploaded.')
     if st.button('Press to use Example Dataset'):
         # Example data
-        @st.cache
+        @st.cache_data
         def load_data():
             a = pd.DataFrame(
                 np.random.rand(100, 5),
