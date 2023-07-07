@@ -18,7 +18,7 @@ To recreate this web app on your own computer, do the following.
 ### Create conda environment
 Firstly, we will create a conda environment called *eda*
 ```
-conda create -n eda python=3.7.9
+conda create -n eda python=3.8
 ```
 Secondly, we will login to the *eda* environment
 ```
